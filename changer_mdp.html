@@ -1,0 +1,35 @@
+<!-- La structure de base en HTML -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Mon super-site</title>
+    </head>
+    <body>
+
+<em><a href="billets_et_commentaires/billets.php">Accéder à la liste des billets</a></em> </br>
+
+<!-- Formulaire de connexion: -->
+
+<p>
+    Pour changer de mot de passe : <br />
+    <form action="changer_mdp_post.php" method="post">
+    <label for="pseudo"> Votre pseudo:</label>
+    <input type="text" name="pseudo" id="pseudo" required> <br />
+
+    <label for="pass">Votre ancien mot de passe:</label> 
+    <input type="password" name="pass" id="pass" required> <br />
+
+    <label for="newpass">Votre nouveau mot de passe:</label> 
+    <input type="password" name="newpass" id="newpass" required> <br />
+
+    <label for="confirm_newpass">Retapez votre nouveau mot de passe:</label>
+    <input type="password" name="confirm_newpass" id="confirm_newpass" required> <br />
+
+    <input type="submit" value="Valider" />
+</form>
+</p>
+
+    </body>
+</html>
